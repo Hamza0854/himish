@@ -46,6 +46,13 @@
 	line-height: 56px;
 	color: var(--color-white);
 }
+.f-40-b {
+	font-family: var(--font-montserrat);
+	font-weight: 600;
+	font-size: 40px;
+	line-height:48px;
+	color: var(--color-green-500);
+}
 .f-32-w {
 	font-family: var(--font-montserrat);
 	font-weight: 600;
@@ -1422,6 +1429,20 @@
 .splide--nav>.splide__track>.splide__list>.splide__slide.is-active {
   border-color: none;
   border: none;
+}
+.set-card-height {
+	height: 419px;
+}
+.set-card-height img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 12px;
+}
+.set-white-box {
+	background-color: var(--color-white);
+	padding: 42px;
+	border-radius: 20px;
 }
 /**************************************/
 /*MEDIA QUERIES*/
