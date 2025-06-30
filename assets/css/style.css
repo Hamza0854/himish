@@ -1444,6 +1444,29 @@
 	padding: 42px;
 	border-radius: 20px;
 }
+.set-main-on-sale img {
+	min-height: 510px;
+	object-fit: cover;
+}
+.set-h-min-70 {
+	min-height: 70px;
+	height: auto;
+}
+.set-flex-wrap-box {
+	flex-wrap: wrap;
+}
+.set-on-sale-white-box {
+	padding: 8px;
+	background-color: var(--color-white);
+	border-radius: 8px;
+}
+.set-text-orange {
+	color: #F58634;
+}
+.set-scroll-y {
+	height: 450px;
+  overflow-y: scroll;
+}
 /**************************************/
 /*MEDIA QUERIES*/
 /**************************************/
