@@ -182,7 +182,7 @@
                   <div class="col-lg-7 mx-auto">
                     <p class="f-16-w mt-20 ">Discover local services, listings, and communities— all in one platform.</p>
                     <div class="d-flex align-items-center gap-3">
-                      <button type="button" class="set-btn-primary set-onhover-primary gap-2 d-flex align-items-center justify-content-center"><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <button type="button" class="set-btn-primary set-onhover-primary gap-2 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#setMultiStepModal"><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.66797 6.83366H0.667969V5.16699H5.66797V0.166992H7.33464V5.16699H12.3346V6.83366H7.33464V11.8337H5.66797V6.83366Z" fill="white"/>
                         </svg>Create Post</button>
                       <a href="#" class="set-btn-primary-outline text-decoration-none text-white">Company</a>
@@ -3602,6 +3602,655 @@
         </div>
       </div>
     </div>
+    <!-- ======================== -->
+    <!-- CREATE POST MODAL -->
+    <!-- ======================== -->
+    <div class="modal fade set-modals-filter" id="setMultiStepModal" tabindex="-1" aria-labelledby="logoutModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered set-w-570">
+        <div class="modal-content set-bg-grey-multistep-modal">
+          
+          <div class="modal-body p-0">
+            <!-- Form -->
+            <form id="setMultiStepForm">
+              <!-- ************************* -->
+              <!-- STEP 1 -->
+              <!-- ************************* -->
+              <div class="set-step set-active">
+                <!-- HEADER MODAL -->
+                <div class="modal-header position-relative align-items-center px-0 pt-0">
+                  <h2 class="f-20-gb d-flex align-items-center gap-2 mb-0" id="exampleModalLabel">Choose</h2>
+                  <button type="button" class="set-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/close-circle.png" alt="close modal">
+                  </button>
+                </div>
+                <!-- CENTER CONTENT -->
+                <div class="set-main-multi-step-1-modals">
+                  <div class="set-radio-check-btns">
+                    <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off" checked>
+                    <label class="btn" for="option5">Business</label>
+                  </div>
+
+                  <div class="set-radio-check-btns">
+                    <input type="radio" class="btn-check" name="options-base" id="option6" autocomplete="off">
+                    <label class="btn" for="option6">Listing</label>
+                  </div>
+
+                  <div class="set-radio-check-btns">
+                    <input type="radio" class="btn-check" name="options-base" id="option7" autocomplete="off">
+                    <label class="btn" for="option7">On Sale</label>
+                  </div>
+
+                  <div class="set-radio-check-btns">
+                    <input type="radio" class="btn-check" name="options-base" id="option8" autocomplete="off">
+                    <label class="btn" for="option8">Deals</label>
+                  </div>
+
+                  <div class="set-radio-check-btns">
+                    <input type="radio" class="btn-check" name="options-base" id="option9" autocomplete="off">
+                    <label class="btn" for="option9">Events</label>
+                  </div>
+                </div>
+                <!-- NEXT BTN -->
+                <div>
+                  <div class="set-max-w-355 w-100 px-0 ">
+                    <div class="mt-60 mx-0 w-100">
+                      <button type="button" class="set-btn-primary d-block w-100 set-next-btn">Next</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ************************* -->
+              <!-- STEP 2 -->
+              <!-- ************************* -->
+              <div class="set-step">
+                <!-- HEADER MODAL -->
+                <div class="modal-header position-relative align-items-center px-0 pt-0">
+                  <h2 class="f-20-gb d-flex align-items-center gap-2 mb-0" id="exampleModalLabel">Create Post</h2>
+                  <button type="button" class="set-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/close-circle.png" alt="close modal">
+                  </button>
+                </div>
+                <!-- CENTER CONTENT -->
+                <div class="set-main-multi-step-1-modals">
+                  <label class="set-new-radio mt-16">
+                    <input type="radio" name="postOption" class="btn-check" value="upload" checked>
+                    <div class="radio-content">
+                      <img src="assets/images/bezier.png" alt="Upload Image">
+                      <span>Upload Image</span>
+                    </div>
+                  </label>
+
+                  <label class="set-new-radio mt-16">
+                    <input type="radio" name="postOption" class="btn-check" value="type">
+                    <div class="radio-content">
+                      <img src="assets/images/type-it-out.png" alt="Type it out">
+                      <span>Type it out</span>
+                    </div>
+                  </label>
+
+                  <label class="set-new-radio mt-16">
+                    <input type="radio" name="postOption" class="btn-check" value="speak">
+                    <div class="radio-content">
+                      <img src="assets/images/speak-it.png" alt="Type it out">
+                      <span>Speak it</span>
+                    </div>
+                  </label>
+                </div>
+                <!-- NEXT BTN -->
+                <div>
+                  <div class="set-max-w-355 w-100 px-0 ">
+                    <div class="mt-60 mx-0 w-100">
+                      <button type="button" class="set-btn-primary d-block w-100 set-next-btn">Next</button>
+                      <!-- <button type="button" class="set-btn-secondary set-prev-btn">Previous</button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ************************* -->
+              <!-- Conditional Steps -->
+              <!-- ************************* -->
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <!-- STEP 1 FOR UPLOAD -->
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <div class="set-step" data-condition="upload">
+                <!-- HEADER MODAL -->
+                <div class="modal-header position-relative align-items-center px-0 pt-0">
+                  <h2 class="f-20-gb d-flex align-items-center gap-2 mb-0" id="exampleModalLabel">Create Post</h2>
+                  <button type="button" class="set-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/close-circle.png" alt="close modal">
+                  </button>
+                </div>
+                <!-- CENTER CONTENT -->
+                <div class="set-white-box-post text-center mt-2">
+                  <h3 class="f-18-gb fw-600">Post your ad</h3>
+                  <div class="upload-box">
+                    <label for="file-upload" class="upload-label">
+                      <div class="upload-preview" id="preview-container">
+                        <img src="assets/images/document-upload.png" height="42px" alt="Upload Icon" id="upload-icon" />
+                      </div>
+                      <p class="set-text-blue-org">Drag & Drop or Tap to Upload, <span class="file-types">PNG, JPG up to 5 MB</span></p>
+                      <input type="file" id="file-upload" accept="image/png, image/jpeg" hidden />
+                    </label>
+                  </div>
+                  <div class="mt-24">
+                    <button type="button" class="set-btn-primary-outline set-btn-create-post">Take a photo</button>
+                  </div>
+                </div>
+                <!-- NEXT BTN -->
+                <div>
+                  <div class="set-max-w-355 w-100 px-0 ">
+                    <div class="mt-60 mx-0 w-100">
+                      <button type="button" class="set-btn-primary d-block w-100 set-next-btn">Next</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <!-- STEP 2 FOR UPLOAD -->
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <div class="set-step" data-condition="upload">
+                <!-- HEADER MODAL -->
+                <div class="modal-header position-relative align-items-center px-0 pt-0">
+                  <h2 class="f-20-gb d-flex align-items-center gap-2 mb-0" id="exampleModalLabel">Analyzing your ad...</h2>
+                  <button type="button" class="set-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/close-circle.png" alt="close modal">
+                  </button>
+                </div>
+                <!-- CENTER CONTENT -->
+                <div class="set-white-box-post text-center mt-2">
+                  <img src="assets/images/loading-post.gif" alt="gif" class="img-fluid">
+                </div>
+                <div class="set-main-multi-step-1-modals">
+                  <p class="f-14-g px-3 text-center fw-normal">Extracting text and details from your image. Hold tight!</p>
+                </div>
+                <!-- NEXT BTN -->
+                <div>
+                  <div class="set-max-w-355 w-100 px-0 ">
+                    <div class="mt-60 mx-0 w-100">
+                      <button type="button" class="set-btn-primary d-block w-100 set-next-btn">Next</button>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <!-- STEP 3 FOR UPLOAD -->
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <div class="set-step" data-condition="upload">
+                <!-- HEADER MODAL -->
+                <div class="modal-header position-relative align-items-center px-0 pt-0">
+                  <h2 class="f-20-gb d-flex align-items-center gap-2 mb-0" id="exampleModalLabel">Edit Ad Content</h2>
+                  <button type="button" class="set-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/close-circle.png" alt="close modal">
+                  </button>
+                </div>
+                <!-- CENTER CONTENT -->
+                <div class="set-white-box-post text-center set-p-12-all mt-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="set-img-box-80">
+                      <img src="assets/images/square-box.png" alt="square">
+                    </div>
+                    <div class="flex-grow-1">
+                      <textarea class="set-textarea-all set-textarea-80" placeholder="Sample extracted ad content here..."></textarea>
+                    </div>
+                  </div>
+                  <div class="row mt-20">
+                    <div class="col-lg-8 mx-auto">
+                      <h4 class="f-14-gb fw-600">Would you like to add or edit details by voice</h4>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <button class="set-btn-primary-outline set-divide-btns"><img src="assets/images/microphone-2.png"> Add by Voice</button>
+                    </div>
+                    <div class="col-6">
+                      <button class="set-btn-primary-outline set-divide-btns"><img src="assets/images/edit-2.png"> Edit Manually</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="set-main-multi-step-1-modals mt-5">
+                  <h4 class="f-14-gb fw-600">Creating listing for</h4>
+                  <div class="">
+                    <div class="set-radio-check-btns">
+                      <input type="radio" class="btn-check" name="options-base" id="option10" autocomplete="off" checked>
+                      <label class="btn py-2" for="option10">Myself</label>
+                    </div>
+
+                    <div class="set-radio-check-btns">
+                      <input type="radio" class="btn-check" name="options-base" id="option11" autocomplete="off">
+                      <label class="btn py-2" for="option11">Others</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- NEXT BTN -->
+                <div>
+                  <div class="set-max-w-355 w-100 px-0 ">
+                    <div class="mt-60 mx-0 w-100">
+                      <button type="button" class="set-btn-primary d-block w-100 set-next-btn">Next</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <!-- STEP 4 FOR UPLOAD -->
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <div class="set-step" data-condition="upload">
+                <!-- HEADER MODAL -->
+                <div class="modal-header position-relative align-items-center px-0 pt-0">
+                  <h2 class="f-20-gb d-flex align-items-center gap-2 mb-0" id="exampleModalLabel">Preview Ads</h2>
+                  <button type="button" class="set-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/close-circle.png" alt="close modal">
+                  </button>
+                </div>
+                <!-- CENTER CONTENT -->
+                <div class="set-white-box-post text-center p-0 mt-2">
+                  <div class="set-business-card position-relative">
+                    <a href="detail.html" class="d-block set-business-card-img position-relative">
+                      <span class="set-badge-business badge-color-blue">Home Improvement</span>
+                      <img src="assets/images/business-card.png" alt="business card">
+                    </a>
+                    <!-- CONTENT -->
+                    <div class="set-business-card-content position-relative">
+                      <!-- TIME STAMP -->
+                      <span class="set-post-stamp d-inline-flex align-items-center gap-1">
+                        <img src="assets/images/clock-01.png" alt="time"> 1 h</span>
+                      <!-- TITLE -->
+                      <a href="#" class="d-block text-decoration-none f-16-gb fw-600 mt-2 pe-5">Mail On Broadway <img src="assets/images/verify-badge.png" alt="verfiy badge"></a>
+                      <span class="d-block f-10-grey-67 d-flex gap-2 align-items-center"><a href="#" class="text-decoration-none f-12-grey-67"><img src="assets/images/location-05.png">New York, NY </a> 08 mi. away</span>
+                      <!-- BADGES -->
+                      <div class="set-card-badges">
+                        <a href="#" class="d-inline-block mt-10">Windows</a>
+                        <a href="#" class="d-inline-block mt-10">Window Replacement</a>
+                        <a href="#" class="d-inline-block mt-10">Glass</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- NEXT BTN -->
+                <div class="mt-60">
+                  <div class="set-max-w-355 w-100 px-0">
+                    <div class="row">
+                      <div class="col-6">
+                        <button type="button" class="set-btn-primary-outline d-block w-100 set-next-btn">Edit Post</button>
+                      </div>
+                      <div class="col-6">
+                        <button type="button" class="set-btn-primary d-block w-100 set-next-btn">Next</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <!-- STEP 5 FOR UPLOAD -->
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <div class="set-step" data-condition="upload">
+                <!-- HEADER MODAL -->
+                <div class="modal-header position-relative align-items-center px-0 pt-0">
+                  <h2 class="f-20-gb d-flex align-items-center gap-2 mb-0" id="exampleModalLabel">Review & Edit</h2>
+                  <button type="button" class="set-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/close-circle.png" alt="close modal">
+                  </button>
+                </div>
+                <!-- CENTER CONTENT -->
+                <div class="set-max-w-355 w-100 px-0">
+                  <h4 class="f-16-gb fw-600">Your Ad Preview</h4>
+                </div>
+                <div class="set-white-box-post text-center mt-2">
+                  <h4 class="f-16-gb fw-600 text-start">Ad Content</h4>
+                  <textarea class="set-textarea-all set-textarea-80" rows="6" placeholder="Enter here..."></textarea>
+                  <div class="d-flex align-items-center justify-content-between mt-24">
+                    <h4 class="f-16-gb fw-600 m-0">Ad Image</h4>
+                    <a href="#"><img src="assets/images/edit-2.png" alt="img"></a>
+                  </div>
+                  <div class="mt-8">
+                    <a href="#" class="d-block set-business-card-img position-relative">
+                      <img src="assets/images/business-card.png" alt="business card">
+                    </a>
+                  </div>
+                </div>
+                <div class="set-max-w-355 w-100 px-0">
+                  <div class="set-notification-card mt-60">
+                    <img src="assets/images/info-circle-noti.png" height="16px" width="17px" alt="img">
+                    <p class="m-0 f-12-gb">Make sure your ad looks right. Edit text or replace the image as needed.</p>
+                  </div>
+                </div>
+                <!-- NEXT BTN -->
+                <div class="mt-60">
+                  <div class="set-max-w-355 w-100 px-0">
+                    <div class="row">
+                      <div class="col-6">
+                        <button type="button" class="set-btn-primary-outline d-block w-100 set-next-btn">Cancel</button>
+                      </div>
+                      <div class="col-6">
+                        <button type="button" class="set-btn-primary d-block w-100 set-next-btn">Next</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <!-- STEP 1 FOR type -->
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <div class="set-step" data-condition="type">
+                <!-- HEADER MODAL -->
+                <div class="modal-header position-relative align-items-center px-0 pt-0">
+                  <h2 class="f-20-gb d-flex align-items-center gap-2 mb-0" id="exampleModalLabel">Type your Ad</h2>
+                  <button type="button" class="set-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/close-circle.png" alt="close modal">
+                  </button>
+                </div>
+                <!-- CENTER CONTENT -->
+                <div class="set-main-multi-step-1-modals text-center mt-2">
+                  <h4 class="f-16-gb fw-600 text-start">Ad Details</h4>
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="flex-grow-1">
+                      <textarea class="set-textarea-all set-f-12-textarea" rows="5" placeholder="For example: 3br apartment in NYC, third floor, 1200 sq ft, bright living room, close to subway, $3500/month. Contact: John, (123) 456-7890"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <!-- NEXT BTN -->
+                <div>
+                  <div class="set-max-w-355 w-100 px-0 ">
+                    <div class="mt-60 mx-0 w-100">
+                      <button type="button" class="set-btn-primary d-block w-100 set-next-btn">Next</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <!-- STEP 2 FOR type -->
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <div class="set-step" data-condition="type">
+                <!-- HEADER MODAL -->
+                <div class="modal-header position-relative align-items-center px-0 pt-0">
+                  <h2 class="f-20-gb d-flex align-items-center gap-2 mb-0" id="exampleModalLabel">Add an Image?</h2>
+                  <button type="button" class="set-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/close-circle.png" alt="close modal">
+                  </button>
+                </div>
+                <!-- CENTER CONTENT -->
+                <div class="set-white-box-post text-center mt-2">
+                  <h3 class="f-18-gb fw-600">Upload an image with your ad?</h3>
+                  <div class="upload-box">
+                    <label for="file-upload" class="upload-label">
+                      <div class="upload-preview" id="preview-container">
+                        <img src="assets/images/document-upload.png" height="42px" alt="Upload Icon" id="upload-icon" />
+                      </div>
+                      <p class="set-text-blue-org">Drag & Drop or Tap to Upload, <span class="file-types">PNG, JPG up to 5 MB</span></p>
+                      <input type="file" id="file-upload" accept="image/png, image/jpeg" hidden />
+                    </label>
+                  </div>
+                  <div class="mt-24">
+                    <button type="button" class="set-btn-primary-outline set-btn-create-post">Skip</button>
+                  </div>
+                </div>
+                <!-- NEXT BTN -->
+                <div>
+                  <div class="set-max-w-355 w-100 px-0 ">
+                    <div class="mt-60 mx-0 w-100">
+                      <button type="button" class="set-btn-primary d-block w-100 set-next-btn">Next</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <!-- STEP 3 FOR type -->
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <div class="set-step" data-condition="type">
+                <!-- HEADER MODAL -->
+                <div class="modal-header position-relative align-items-center px-0 pt-0">
+                  <h2 class="f-20-gb d-flex align-items-center gap-2 mb-0" id="exampleModalLabel">Type your Ad</h2>
+                  <button type="button" class="set-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/close-circle.png" alt="close modal">
+                  </button>
+                </div>
+                <!-- CENTER CONTENT -->
+                <div class="set-white-box-post text-center mt-2">
+                  <h4 class="f-16-gb fw-600 text-start">Ad Details</h4>
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="flex-grow-1">
+                      <textarea class="set-textarea-all set-f-12-textarea" rows="4" placeholder="Enter here..."></textarea>
+                    </div>
+                  </div>
+                </div>
+                <!-- NEXT BTN -->
+                <div>
+                  <div class="set-max-w-355 w-100 px-0 ">
+                    <div class="mt-60 mx-0 w-100">
+                      <button type="button" class="set-btn-primary d-block w-100 set-next-btn">Next</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <!-- STEP 4 FOR type -->
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <div class="set-step" data-condition="type">
+                <!-- HEADER MODAL -->
+                <div class="modal-header position-relative align-items-center px-0 pt-0">
+                  <h2 class="f-20-gb d-flex align-items-center gap-2 mb-0" id="exampleModalLabel">Preview Ads</h2>
+                  <button type="button" class="set-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/close-circle.png" alt="close modal">
+                  </button>
+                </div>
+                <!-- CENTER CONTENT -->
+                <div class="set-white-box-post text-center p-0 mt-2">
+                  <div class="set-business-card position-relative">
+                    <a href="detail.html" class="d-block set-business-card-img position-relative">
+                      <span class="set-badge-business badge-color-blue">Home Improvement</span>
+                      <img src="assets/images/business-card.png" alt="business card">
+                    </a>
+                    <!-- CONTENT -->
+                    <div class="set-business-card-content position-relative">
+                      <!-- TIME STAMP -->
+                      <span class="set-post-stamp d-inline-flex align-items-center gap-1">
+                        <img src="assets/images/clock-01.png" alt="time"> 1 h</span>
+                      <!-- TITLE -->
+                      <a href="#" class="d-block text-decoration-none f-16-gb fw-600 mt-2 pe-5">Mail On Broadway <img src="assets/images/verify-badge.png" alt="verfiy badge"></a>
+                      <span class="d-block f-10-grey-67 d-flex gap-2 align-items-center"><a href="#" class="text-decoration-none f-12-grey-67"><img src="assets/images/location-05.png">New York, NY </a> 08 mi. away</span>
+                      <!-- BADGES -->
+                      <div class="set-card-badges">
+                        <a href="#" class="d-inline-block mt-10">Windows</a>
+                        <a href="#" class="d-inline-block mt-10">Window Replacement</a>
+                        <a href="#" class="d-inline-block mt-10">Glass</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- NEXT BTN -->
+                <div class="mt-60">
+                  <div class="set-max-w-355 w-100 px-0">
+                    <div class="row">
+                      <div class="col-6">
+                        <button type="button" class="set-btn-primary-outline d-block w-100 set-next-btn">Edit Post</button>
+                      </div>
+                      <div class="col-6">
+                        <button type="button" class="set-btn-primary d-block w-100 set-next-btn">Next</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <!-- STEP 5 FOR type -->
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <div class="set-step" data-condition="type">
+                <!-- HEADER MODAL -->
+                <div class="modal-header position-relative align-items-center px-0 pt-0">
+                  <h2 class="f-20-gb d-flex align-items-center gap-2 mb-0" id="exampleModalLabel">Review & Edit</h2>
+                  <button type="button" class="set-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/close-circle.png" alt="close modal">
+                  </button>
+                </div>
+                <!-- CENTER CONTENT -->
+                <div class="set-max-w-355 w-100 px-0">
+                  <h4 class="f-16-gb fw-600">Your Ad Preview</h4>
+                </div>
+                <div class="set-white-box-post text-center mt-2">
+                  <h4 class="f-16-gb fw-600 text-start">Ad Content</h4>
+                  <textarea class="set-textarea-all set-textarea-80" rows="6" placeholder="Enter here..."></textarea>
+                  <div class="d-flex align-items-center justify-content-between mt-24">
+                    <h4 class="f-16-gb fw-600 m-0">Ad Image</h4>
+                    <a href="#"><img src="assets/images/edit-2.png" alt="img"></a>
+                  </div>
+                  <div class="mt-8">
+                    <a href="#" class="d-block set-business-card-img position-relative">
+                      <img src="assets/images/business-card.png" alt="business card">
+                    </a>
+                  </div>
+                </div>
+                <div class="set-max-w-355 w-100 px-0">
+                  <div class="set-notification-card mt-60">
+                    <img src="assets/images/info-circle-noti.png" height="16px" width="17px" alt="img">
+                    <p class="m-0 f-12-gb">Make sure your ad looks right. Edit text or replace the image as needed.</p>
+                  </div>
+                </div>
+                <!-- NEXT BTN -->
+                <div class="mt-60">
+                  <div class="set-max-w-355 w-100 px-0">
+                    <div class="row">
+                      <div class="col-6">
+                        <button type="button" class="set-btn-primary-outline d-block w-100 set-next-btn">Cancel</button>
+                      </div>
+                      <div class="col-6">
+                        <button type="button" class="set-btn-primary d-block w-100 set-next-btn">Next</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <!-- STEP 1 FOR speak -->
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <div class="set-step" data-condition="speak">
+                <!-- HEADER MODAL -->
+                <div class="modal-header position-relative align-items-center px-0 pt-0">
+                  <h2 class="f-20-gb d-flex align-items-center gap-2 mb-0" id="exampleModalLabel">Speak it</h2>
+                  <button type="button" class="set-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/close-circle.png" alt="close modal">
+                  </button>
+                </div>
+                <div class="set-max-w-355">
+                  <h4 class="f-16-gb fw-600">Speak</h4>
+                </div>
+                <!-- CENTER CONTENT -->
+                <div class="set-white-box-post text-center mt-2">
+                  <img src="assets/images/microphone-2-post.png" alt="img">
+                  <p class="f-14-g fw-600">Click to Speak</p>
+                </div>
+                <div class="set-white-box-post text-center mt-2">
+                  <h4 class="f-16-gb fw-600 text-start">Ad Content</h4>
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="flex-grow-1">
+                      <textarea class="set-textarea-all set-f-12-textarea" rows="4" placeholder="Enter here..."></textarea>
+                    </div>
+                  </div>
+                  <div class="mt-24">
+                    <button class="set-btn-primary-outline py-2"><img src="assets/images/edit-2.png"> Edit Ad</button>
+                  </div>
+                </div>
+                <!-- NEXT BTN -->
+                <div>
+                  <div class="set-max-w-355 w-100 px-0 ">
+                    <div class="mt-60 mx-0 w-100">
+                      <button type="button" class="set-btn-primary d-block w-100 set-next-btn">Next</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <!-- STEP 2 FOR speak -->
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <div class="set-step" data-condition="speak">
+                <!-- HEADER MODAL -->
+                <div class="modal-header position-relative align-items-center px-0 pt-0">
+                  <h2 class="f-20-gb d-flex align-items-center gap-2 mb-0" id="exampleModalLabel">Create Post</h2>
+                  <button type="button" class="set-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/close-circle.png" alt="close modal">
+                  </button>
+                </div>
+                <!-- CENTER CONTENT -->
+                <div class="set-white-box-post text-center mt-2">
+                  <h3 class="f-18-gb fw-600">Post your ad</h3>
+                  <div class="upload-box">
+                    <label for="file-upload" class="upload-label">
+                      <div class="upload-preview" id="preview-container">
+                        <img src="assets/images/document-upload.png" height="42px" alt="Upload Icon" id="upload-icon" />
+                      </div>
+                      <p class="set-text-blue-org">Drag & Drop or Tap to Upload, <span class="file-types">PNG, JPG up to 5 MB</span></p>
+                      <input type="file" id="file-upload" accept="image/png, image/jpeg" hidden />
+                    </label>
+                  </div>
+                  <div class="mt-24">
+                    <button type="button" class="set-btn-primary-outline set-btn-create-post">Skip</button>
+                  </div>
+                </div>
+                <!-- NEXT BTN -->
+                <div>
+                  <div class="set-max-w-355 w-100 px-0 ">
+                    <div class="mt-60 mx-0 w-100">
+                      <button type="button" class="set-btn-primary d-block w-100 set-next-btn">Next</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <!-- STEP 3 FOR speak -->
+              <!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+              <div class="set-step" data-condition="speak">
+                <!-- HEADER MODAL -->
+                <div class="modal-header position-relative align-items-center px-0 pt-0">
+                  <h2 class="f-20-gb d-flex align-items-center gap-2 mb-0" id="exampleModalLabel">Preview Ads</h2>
+                  <button type="button" class="set-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/close-circle.png" alt="close modal">
+                  </button>
+                </div>
+                <!-- CENTER CONTENT -->
+                <div class="set-white-box-post text-center p-0 mt-2">
+                  <div class="set-business-card position-relative">
+                    <a href="detail.html" class="d-block set-business-card-img position-relative">
+                      <span class="set-badge-business badge-color-blue">Home Improvement</span>
+                      <img src="assets/images/business-card.png" alt="business card">
+                    </a>
+                    <!-- CONTENT -->
+                    <div class="set-business-card-content position-relative">
+                      <!-- TIME STAMP -->
+                      <span class="set-post-stamp d-inline-flex align-items-center gap-1">
+                        <img src="assets/images/clock-01.png" alt="time"> 1 h</span>
+                      <!-- TITLE -->
+                      <a href="#" class="d-block text-decoration-none f-16-gb fw-600 mt-2 pe-5">Mail On Broadway <img src="assets/images/verify-badge.png" alt="verfiy badge"></a>
+                      <span class="d-block f-10-grey-67 d-flex gap-2 align-items-center"><a href="#" class="text-decoration-none f-12-grey-67"><img src="assets/images/location-05.png">New York, NY </a> 08 mi. away</span>
+                      <!-- BADGES -->
+                      <div class="set-card-badges">
+                        <a href="#" class="d-inline-block mt-10">Windows</a>
+                        <a href="#" class="d-inline-block mt-10">Window Replacement</a>
+                        <a href="#" class="d-inline-block mt-10">Glass</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- NEXT BTN -->
+                <div class="mt-60">
+                  <div class="set-max-w-355 w-100 px-0">
+                    <div class="row">
+                      <div class="col-6">
+                        <button type="button" class="set-btn-primary-outline d-block w-100 set-next-btn">Edit Post</button>
+                      </div>
+                      <div class="col-6">
+                        <button type="button" class="set-btn-primary d-block w-100 set-next-btn">Next</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -3620,6 +4269,75 @@
         });
       });
     </script>
+    <script>
+      const steps = document.querySelectorAll('.set-step');
+      let currentStep = 0;
+      let selectedOption = '';
 
+      function getFilteredSteps() {
+        return Array.from(steps).filter(step => {
+          const condition = step.dataset.condition;
+          // Show all steps before condition selection
+          if (!selectedOption) return true;
+          return !condition || condition === selectedOption;
+        });
+      }
+
+      function showStep(index) {
+        const visibleSteps = getFilteredSteps();
+        steps.forEach(step => step.classList.remove('set-active'));
+        if (visibleSteps[index]) {
+          visibleSteps[index].classList.add('set-active');
+          currentStep = index;
+        }
+      }
+
+      document.addEventListener('click', function (e) {
+        if (e.target.classList.contains('set-next-btn')) {
+          const visibleSteps = getFilteredSteps();
+
+          if (currentStep === 1) {
+            const selected = document.querySelector('input[name="postOption"]:checked');
+            if (!selected) return alert('Please select an option!');
+            selectedOption = selected.value;
+          }
+
+          if (currentStep < visibleSteps.length - 1) {
+            showStep(currentStep + 1);
+          }
+        }
+
+        if (e.target.classList.contains('set-prev-btn')) {
+          const visibleSteps = getFilteredSteps();
+          if (currentStep > 0) {
+            showStep(currentStep - 1);
+          }
+        }
+      });
+
+      // Initialize first step
+      showStep(0);
+    </script>
+    <script>
+      document.getElementById('file-upload').addEventListener('change', function (e) {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        const reader = new FileReader();
+        reader.onload = function (event) {
+          const img = document.createElement('img');
+          img.src = event.target.result;
+          img.style.width = '60px';
+          img.style.height = '60px';
+          img.style.objectFit = 'cover';
+
+          const previewContainer = document.getElementById('preview-container');
+          previewContainer.innerHTML = ''; // remove icon
+          previewContainer.appendChild(img); // insert uploaded image
+        };
+
+        reader.readAsDataURL(file);
+      });
+    </script>
   </body>
 </html>
