@@ -1643,6 +1643,10 @@
 .set-f-12-textarea {
 	font-size: 12px;
 }
+.set-toggle-green:checked {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
 /**************************************/
 /*MEDIA QUERIES*/
 /**************************************/
