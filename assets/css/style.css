@@ -813,6 +813,24 @@
 .badge-color-darkpurple {
 	background-color: #8F29FD;
 }
+.badge-color-darkblue {
+	background-color: #03159D !important;
+}
+.badge-color-brown {
+	background-color: #B63914 !important;
+}
+.badge-color-pink {
+	background-color: #FF50D9 !important;
+}
+.badge-color-8b8 {
+	background-color: #2D68B8 !important;
+}
+.badge-color-lightbrown {
+	background-color: #BE8155 !important;
+}
+.dropdown-menu {
+	font-family: var(--font-montserrat);
+}
 .fw-600 {
 	font-weight: 600;
 }
@@ -1236,6 +1254,7 @@
 	padding: 10px;
 	border-radius: 8px;
 	background-color: var(--color-white);
+	height: 100%;
 }
 .set-category-card-img a img {
 	height: 100%;
@@ -1646,6 +1665,51 @@
 .set-toggle-green:checked {
     background-color: #4CAF50;
     border-color: #4CAF50;
+}
+
+.hover-text {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: max-height 0.6s ease, opacity 0.6s ease, transform 0.6s ease;
+  font-size: 14px;
+  color: #555;
+  font-family: var(--font-montserrat);
+}
+
+.set-radio-check-btns:hover .hover-text {
+  max-height: 100px; /* Adjust to your expected max height */
+  opacity: 1;
+  transform: translateY(0);
+  padding-top: 8px; /* Optional for spacing reveal */
+}
+.set-bg-dark-grey-tag {
+	background-color: #BAC5DB;
+}
+.deal-detail-content-new .set-post-stamp {
+  top: 5px;
+}
+.set-list-items-detail-deals ul {
+	padding-left: 20px;
+}
+.set-list-items-detail-deals ul li {
+	margin-bottom: 4px;
+}
+.set-list-type-none-event ul {
+	list-style-type: none;
+	padding: 0px;
+}
+.set-list-type-none-event ul li {
+	margin-bottom: 0px;
+}
+.set-text-color-blue-300 {
+	color: #6982B1 !important;
+}
+.set-note-box {
+	background-color: #D4E0EBCC;
+	border-radius: 8px;
+	padding: 8px;
 }
 /**************************************/
 /*MEDIA QUERIES*/
