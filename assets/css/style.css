@@ -32,6 +32,11 @@
 	width: 92%;
 	margin: 0 auto;
 }
+.set-container-530 {
+	max-width: 530px;
+	width: 92%;
+	margin: 0 auto;
+}
 .f-48-w {
 	font-family: var(--font-montserrat);
 	font-weight: 700;
@@ -223,6 +228,9 @@
 	padding: 16px;
 }
 /*MARGIN*/
+.mt-70 {
+	margin-top: 70px;
+}
 .mt-60 {
 	margin-top: 60px;
 }
@@ -1710,6 +1718,210 @@
 	background-color: #D4E0EBCC;
 	border-radius: 8px;
 	padding: 8px;
+}
+/**************************************/
+/*COMPANY CARDS*/
+/**************************************/
+.set-create-company-card {
+	background-color: var(--color-white);
+	border-radius: 8px;
+	padding: 12px;
+}
+.set-company-card-box-76 {
+	height: 76px;
+	width: 76px;
+	border-radius: 15px;
+	box-shadow: 0px 4px 4px 0px #0000001A;
+	overflow: hidden;
+}
+.set-company-card-box-76 img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.set-interaction-icons-box {
+	padding: 4px 8px;
+	font-size: 12px;
+	background-color: #E9ECF3;
+	border-radius: 8px;
+	font-weight: 600;
+	color: #1F458A;
+	font-family: var(--font-montserrat);
+}
+.set-w-20 {
+	width: 20%;
+}
+.set-bg-transparent {
+	background-color: transparent;
+}
+.set-create-company-card .dropdown-menu li {
+	font-size: 12px;
+}
+.set-card-175 {
+	height: 175px;
+	width: 175px;
+}
+.set-w-110 {
+	width: 110px;
+}
+.set-gallery-box-img img {
+	width: 100%;
+	height: 450px;
+	object-fit: cover;
+	border-radius: 8px;
+}
+.set-company-grid.row {
+  --bs-gutter-x: 8px;
+}
+
+.set-info-profile-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.set-info-profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.set-info-camera-icon {
+ 	position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #1F458A;
+  border-radius: 10px;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+  border: 1px solid #E9ECF3;
+}
+
+.set-info-camera-icon:hover {
+  background: #1d4ed8;
+}
+
+.set-info-profile-container input[type="file"] {
+  display: none;
+}
+.set-input-info-all input {
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	font-family: var(--font-montserrat);
+	padding: 16px;
+	outline: none;
+	background-color: #E9ECF3;
+	border-radius: 10px;
+	border: none;
+	margin-top: 8px;
+}
+.set-btn-edit-post {
+	font-family: var(--font-montserrat);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #1F458A;
+	font-weight: normal;
+	background-color: transparent;
+	border: none;
+}
+.set-running-ads-tab .nav-tabs .nav-item {
+	width: 33%;
+}
+.set-running-ads-tab .nav-tabs .nav-item .nav-link.active {
+	background-color: #1F458A;
+}
+.set-btn-back-home {
+	padding: 8px 36px;
+	font-family: var(--font-montserrat);
+	font-weight: 600;
+	font-style: SemiBold;
+	font-size: 14px;
+	line-height: 20px;
+	color: var(--color-white);
+	border-radius: 8px;
+	text-decoration: none;
+	display: inline-block;
+	background-color: #1F458A;
+}
+.set-content-default {
+	font-family: var(--font-montserrat);
+}
+.set-content-default p {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 500;
+}
+.set-content-default ul li {
+	font-size: 14px;
+	font-weight: 500;
+}
+.set-faqs-content-area {
+	font-family: var(--font-montserrat);
+	font-size: 14px;
+}
+.set-box-40-40 {
+	height: 40px;
+	width: 40px;
+	border-radius: 50px;
+	background-color: #1F458A;
+	color: var(--color-white);
+	font-weight: 700;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.set-box-40-40 img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.set-white-box-chat {
+	font-family: var(--font-montserrat);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #212121;
+	background-color: var(--color-white);
+	padding: 16px 32px;
+	border-radius: 0px 30px 20px 30px;
+}	
+.set-blue-box-chat {
+	background-color: #1F458A;
+	border-radius: 30px 30px 0px 20px;
+	color: var(--color-white);
+	min-height: auto;
+}
+.set-input-msg-chat {
+	gap: 10px;
+}
+.set-input-msg-chat input {
+	color: #646465;
+	padding: 14px;
+	font-family: var(--font-inter);
+	font-size: 14px;
+	border: none;
+	border-radius: 8px !important;
+}
+.set-input-msg-chat span {
+	border-radius: 8px !important;
+	cursor: pointer;
+	background-color: var(--color-blue-500);
+}
+.set-notification-card-main {
+	padding: 22px 16px;	
+	background-color: #F7F8FE;
+	border: 1px solid #E9ECF3;
+	border-radius: 8px;
 }
 /**************************************/
 /*MEDIA QUERIES*/
