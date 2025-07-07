@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>All Categories - Himish</title>
+    <title>For General Items - Himish</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <!-- ************************************ -->
     <!-- STYLE SHEET -->
@@ -171,100 +171,400 @@
         <div class="col-lg-12 mt-20 mb-2">
           <div class="set-back-btn d-flex align-items-center gap-2">
             <a href="index.html" class="f-14-gb text-decoration-none d-flex align-items-center gap-1"><img src="assets/images/arrow-right-01.png" alt="arrow"> Back</a>
-            <span class="f-14-gb ">> Category</span>
+            <span class="f-14-gb ">> General Items</span>
           </div>
         </div>
       </div>
       <!-- ************************************ -->
-      <!-- ALL CATEGORY -->
-      <!-- ************************************ -->
-      <div class="mt-24">
-              <div class="d-flex justify-content-between align-items-end">
-                <h2 class="f-32-b m-0">All Categories</h2>
+      <!-- FILTERS  -->
+      <!-- ************************************ --> 
+      <section class="set-main-filter mt-20">
+        <form action="" method="" enctype="">
+          <div class="row align-items-center">
+            <!-- LOCATION -->
+            <div class="col-lg-3 col-md-4 col-12">
+              <div class="position-relative set-border-line-right">
+                <img src="assets/images/select-location.png" alt="location" class="set-position-location">
+                <select class="form-select set-select-all set-select-filter" aria-label="Default select example" name="profile_type">
+                  <option selected>Choose city</option>
+                  <option value="New York, NY"><img src="assets/images/location-item.png" alt="location">New York, NY</option>
+                  <option value="Los Angeles">Los Angeles</option>
+                  <option value="Chicago">Chicago</option>
+                  <option value="Houston">Houston</option>
+                  <option value="Philadelphia">Philadelphia</option>
+                </select>
               </div>
-              <div class="set-flex-categories">
-                <!-- CARD -->
-                <div class="set-category-card text-center mt-20">
-                  <a href="for-real-state.html" class="d-block">
-                    <div class="set-card-img">
-                      <img src="assets/images/real-state.png" alt="img">
-                    </div>
-                    <span>Real Estate</span>
-                  </a>
+            </div>
+            <!-- SEARCH -->
+            <div class="col-lg-6 col-md-8 col-12">
+              <div class="input-group set-custom-search">
+                <input type="text" class="form-control" placeholder="Search anything...">
+                <button type="submit" class="input-group-text"><img src="assets/images/search-icon-outline.png" alt="search"></button>
+              </div>
+            </div>
+            <!-- SORT + FILTER -->
+            <div class="col-lg-3 col-md-12 col-12 mt-lg-0 mt-3">
+              <div class="d-flex align-items-center gap-2">
+                <div class="position-relative">
+                  <img src="assets/images/sort.png" alt="sort" class="set-position-location set-top-12">
+                  <select class="form-select set-select-all set-select-sort" aria-label="Default select example" name="profile_type">
+                    <option value="">Sort By</option>
+                    <option value="name_asc">Name (A–Z)</option>
+                    <option value="name_desc">Name (Z–A)</option>
+                    <option value="date_newest">Date (Newest First)</option>
+                    <option value="date_oldest">Date (Oldest First)</option>
+                    <option value="price_low_high">Price (Low to High)</option>
+                    <option value="price_high_low">Price (High to Low)</option>
+                    <option value="rating_high_low">Rating (High to Low)</option>
+                    <option value="rating_low_high">Rating (Low to High)</option>
+                    <option value="popularity">Most Popular</option>
+                    <option value="relevance">Most Relevant</option>
+                  </select>
                 </div>
-                <!-- CARD -->
-                <div class="set-category-card text-center mt-20">
-                  <a href="for-fashion.html" class="d-block">
-                    <div class="set-card-img">
-                      <img src="assets/images/fashion.png" alt="img">
-                    </div>
-                    <span>Fashion</span>
-                  </a>
+                <div class="set-flex-grow-1">
+                  <button type="button" class="set-btn-filter d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#chooseService">
+                    <img src="assets/images/filter.png" alt="filter">
+                    Filter<span class="set-filter-count">1</span>
+                  </button>
                 </div>
-                <!-- CARD -->
-                <div class="set-category-card text-center mt-20">
-                  <a href="for-babysitters.html" class="d-block">
-                    <div class="set-card-img">
-                      <img src="assets/images/babysitters.png" alt="img">
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+      <!-- ************************************ -->
+      <!-- FOR USED CARS -->
+      <!-- ************************************ -->
+      <div class="set-main-cards-area mt-40">
+              <div class="d-flex justify-content-between align-items-end">
+                <h2 class="f-32-b m-0">General Items</h2>
+              </div>
+              <!-- CARD GRID -->
+              <div class="row">
+                <div class="col-lg-3 col-md-4 mt-20">
+                  <div class="set-card-categories">
+                    <div class="set-category-card-img position-relative">
+                      <span class="set-blue-card-badge badge-jobs-primary">General Items</span>
+                      <a href="product-detail-general-item-1.html" class="d-block">
+                        <img src="assets/images/general-item-1.png" alt="img">
+                      </a>
                     </div>
-                    <span>Babysitters</span>
-                  </a>
-                </div>
-                <!-- CARD -->
-                <div class="set-category-card text-center mt-20">
-                  <a href="for-car.html" class="d-block">
-                    <div class="set-card-img">
-                      <img src="assets/images/cars.png" alt="img">
+                    <div class="set-category-card-content mt-10">
+                      <!-- FOR SALE -->
+                      <div class="d-flex align-items-center justify-content-between">
+                        <span class="d-block for-sale-badge badge-jobs-primary">Furniture</span>
+                        <div class="d-flex align-items-center">
+                          <span class="set-post-stamp d-inline-flex align-items-center gap-1 position-static"><img src="assets/images/clock-01.png" alt="time"> 2h</span>
+                          <div class="dropdown set-btn-down-none">
+                            <button class="btn dropdown-toggle set-btn-ftr-dropdown " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="assets/images/Claim.png" alt="time">
+                            </button>
+                            <ul class="dropdown-menu set-position-inner">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- TITLE PRICE -->
+                      <div class="d-flex justify-content-between mt-10">
+                        <div>
+                          <a href="product-detail-general-item-1.html" class="d-block text-decoration-none f-14-gb fw-600 pe-5">Modern Oak Dining Table</a>
+                          <span class="d-block f-10-grey-67 d-flex gap-2 align-items-center"><a href="#" class="text-decoration-none f-12-grey-67"><img src="assets/images/location-05.png">3182 San Francisco, CA</a></span>
+                        </div>
+                      </div>
+                      <!-- ICONS -->
+                      <div>
+                        <p class="f-12-g mt-1 mb-0">Experience the magic of Broadway under the stars... <a href="#" class="f-12-bl text-decoration-none">Read More</a></p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="set-varients-items flex-grow-1">
+                          <div class="d-flex align-items-center">
+                            <strong class="f-10-bl">Category: &nbsp;</strong>
+                            <span class="f-10-bl">Furniture → Dining</span>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <strong class="f-10-bl">Brand: &nbsp;</strong>
+                            <span class="f-10-bl">WoodCrafters</span>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <strong class="f-10-bl">Condition: &nbsp;</strong>
+                            <span class="f-10-bl">New</span>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <strong class="f-10-bl">Size:  &nbsp;</strong>
+                            <span class="f-10-bl">6-Seater (72" x 36")</span>
+                          </div>
+                        </div>
+                        <div class="text-center">
+                          <div class="d-flex align-items-center gap-3">
+                            <div class="set-share-card">
+                              <img src="assets/images/share.png" alt="share">
+                            </div>
+                            <div class="set-share-card">
+                              <img src="assets/images/tag-icon.png" alt="tag">
+                            </div>
+                          </div>
+                          <h6 class="f-11-orange mb-0 mt-2">Price</h6>
+                          <label class="f-12-bl fw-600">$650.00</label>
+                        </div>
+                      </div>
+                      <!-- TAGS -->
+                      <div class="set-tags-event-card mt-1 border-0">
+                        <span class="set-tag-event">Theatre </span>
+                        <span class="set-tag-event checked-tag">Live music </span>
+                        <span class="set-tag-event">Performances</span>
+                        <span class="set-tag-event">Nissan</span>
+                        <span class="set-tag-event">Nissan</span>
+                        <span class="set-tag-event">Nissan</span>
+                      </div>
                     </div>
-                    <span>Cars & Vehicles</span>
-                  </a>
+                  </div>
                 </div>
-                <!-- CARD -->
-                <div class="set-category-card text-center mt-20">
-                  <a href="for-event.html" class="d-block">
-                    <div class="set-card-img">
-                      <img src="assets/images/events.png" alt="img">
+                <div class="col-lg-3 col-md-4 mt-20">
+                  <div class="set-card-categories">
+                    <div class="set-category-card-img position-relative">
+                      <span class="set-blue-card-badge badge-color-darkpurple">General Items</span>
+                      <a href="product-detail-general-item-2.html" class="d-block">
+                        <img src="assets/images/general-item-2.png" alt="img">
+                      </a>
                     </div>
-                    <span>Events</span>
-                  </a>
-                </div>
-                <!-- CARD -->
-                <div class="set-category-card text-center mt-20">
-                  <a href="for-jobs.html" class="d-block">
-                    <div class="set-card-img">
-                      <img src="assets/images/jobs.png" alt="img">
+                    <div class="set-category-card-content mt-10">
+                      <!-- FOR SALE -->
+                      <div class="d-flex align-items-center justify-content-between">
+                        <span class="d-block for-sale-badge badge-jobs-primary">Electronic</span>
+                        <div class="d-flex align-items-center">
+                          <span class="set-post-stamp d-inline-flex align-items-center gap-1 position-static"><img src="assets/images/clock-01.png" alt="time"> 2h</span>
+                          <div class="dropdown set-btn-down-none">
+                            <button class="btn dropdown-toggle set-btn-ftr-dropdown " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="assets/images/Claim.png" alt="time">
+                            </button>
+                            <ul class="dropdown-menu set-position-inner">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- TITLE PRICE -->
+                      <div class="d-flex justify-content-between mt-10">
+                        <div>
+                          <a href="product-detail-general-item-2.html" class="d-block text-decoration-none f-14-gb fw-600 pe-5">Samsung 50" Smart TV</a>
+                          <span class="d-block f-10-grey-67 d-flex gap-2 align-items-center"><a href="#" class="text-decoration-none f-12-grey-67"><img src="assets/images/location-05.png">3182 San Francisco, CA</a></span>
+                        </div>
+                      </div>
+                      <!-- ICONS -->
+                      <div>
+                        <p class="f-12-g mt-1 mb-0">Experience the magic of Broadway under the stars... <a href="#" class="f-12-bl text-decoration-none">Read More</a></p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="set-varients-items flex-grow-1">
+                          <div class="d-flex align-items-center">
+                            <strong class="f-10-bl">Category: &nbsp;</strong>
+                            <span class="f-10-bl">Electronic → TV</span>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <strong class="f-10-bl">Brand: &nbsp;</strong>
+                            <span class="f-10-bl">Samsung</span>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <strong class="f-10-bl">Condition: &nbsp;</strong>
+                            <span class="f-10-bl">New</span>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <strong class="f-10-bl">Size:  &nbsp;</strong>
+                            <span class="f-10-bl">32”</span>
+                          </div>
+                        </div>
+                        <div class="text-center">
+                          <div class="d-flex align-items-center gap-3">
+                            <div class="set-share-card">
+                              <img src="assets/images/share.png" alt="share">
+                            </div>
+                            <div class="set-share-card">
+                              <img src="assets/images/tag-icon.png" alt="tag">
+                            </div>
+                          </div>
+                          <h6 class="f-11-orange mb-0 mt-2">Price</h6>
+                          <label class="f-12-bl fw-600">$650.00</label>
+                        </div>
+                      </div>
+                      <!-- TAGS -->
+                      <div class="set-tags-event-card mt-1 border-0">
+                        <span class="set-tag-event">Theatre </span>
+                        <span class="set-tag-event checked-tag">Live music </span>
+                        <span class="set-tag-event">Performances</span>
+                        <span class="set-tag-event">Nissan</span>
+                        <span class="set-tag-event">Nissan</span>
+                        <span class="set-tag-event">Nissan</span>
+                      </div>
                     </div>
-                    <span>Jobs</span>
-                  </a>
+                  </div>
                 </div>
-                <!-- CARD -->
-                <div class="set-category-card text-center mt-20">
-                  <a href="for-popular-services.html" class="d-block">
-                    <div class="set-card-img">
-                      <img src="assets/images/services.png" alt="img">
+                <div class="col-lg-3 col-md-4 mt-20">
+                  <div class="set-card-categories">
+                    <div class="set-category-card-img position-relative">
+                      <span class="set-blue-card-badge badge-jobs-primary">General Items</span>
+                      <a href="product-detail-general-item-3.html" class="d-block">
+                        <img src="assets/images/general-item-3.png" alt="img">
+                      </a>
                     </div>
-                    <span>Services</span>
-                  </a>
-                </div>
-                <!-- CARD -->
-                <div class="set-category-card text-center mt-20">
-                  <a href="for-lots-found.html" class="d-block">
-                    <div class="set-card-img">
-                      <img src="assets/images/lost.png" alt="img">
+                    <div class="set-category-card-content mt-10">
+                      <!-- FOR SALE -->
+                      <div class="d-flex align-items-center justify-content-between">
+                        <span class="d-block for-sale-badge badge-jobs-primary">Furniture</span>
+                        <div class="d-flex align-items-center">
+                          <span class="set-post-stamp d-inline-flex align-items-center gap-1 position-static"><img src="assets/images/clock-01.png" alt="time"> 2h</span>
+                          <div class="dropdown set-btn-down-none">
+                            <button class="btn dropdown-toggle set-btn-ftr-dropdown " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="assets/images/Claim.png" alt="time">
+                            </button>
+                            <ul class="dropdown-menu set-position-inner">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- TITLE PRICE -->
+                      <div class="d-flex justify-content-between mt-10">
+                        <div>
+                          <a href="product-detail-general-item-3.html" class="d-block text-decoration-none f-14-gb fw-600 pe-5">Modern Oak Dining Table</a>
+                          <span class="d-block f-10-grey-67 d-flex gap-2 align-items-center"><a href="#" class="text-decoration-none f-12-grey-67"><img src="assets/images/location-05.png">3182 San Francisco, CA</a></span>
+                        </div>
+                      </div>
+                      <!-- ICONS -->
+                      <div>
+                        <p class="f-12-g mt-1 mb-0">Experience the magic of Broadway under the stars... <a href="#" class="f-12-bl text-decoration-none">Read More</a></p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="set-varients-items flex-grow-1">
+                          <div class="d-flex align-items-center">
+                            <strong class="f-10-bl">Category: &nbsp;</strong>
+                            <span class="f-10-bl">Furniture → Dining</span>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <strong class="f-10-bl">Brand: &nbsp;</strong>
+                            <span class="f-10-bl">WoodCrafters</span>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <strong class="f-10-bl">Condition: &nbsp;</strong>
+                            <span class="f-10-bl">New</span>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <strong class="f-10-bl">Size:  &nbsp;</strong>
+                            <span class="f-10-bl">6-Seater (72" x 36")</span>
+                          </div>
+                        </div>
+                        <div class="text-center">
+                          <div class="d-flex align-items-center gap-3">
+                            <div class="set-share-card">
+                              <img src="assets/images/share.png" alt="share">
+                            </div>
+                            <div class="set-share-card">
+                              <img src="assets/images/tag-icon.png" alt="tag">
+                            </div>
+                          </div>
+                          <h6 class="f-11-orange mb-0 mt-2">Price</h6>
+                          <label class="f-12-bl fw-600">$650.00</label>
+                        </div>
+                      </div>
+                      <!-- TAGS -->
+                      <div class="set-tags-event-card mt-1 border-0">
+                        <span class="set-tag-event">Theatre </span>
+                        <span class="set-tag-event checked-tag">Live music </span>
+                        <span class="set-tag-event">Performances</span>
+                        <span class="set-tag-event">Nissan</span>
+                        <span class="set-tag-event">Nissan</span>
+                        <span class="set-tag-event">Nissan</span>
+                      </div>
                     </div>
-                    <span>Lost & Found</span>
-                  </a>
+                  </div>
                 </div>
-                <!-- CARD -->
-                <div class="set-category-card text-center mt-20">
-                  <a href="for-general-items.html" class="d-block">
-                    <div class="set-card-img">
-                      <img src="assets/images/furniture.png" alt="img">
+                <div class="col-lg-3 col-md-4 mt-20">
+                  <div class="set-card-categories">
+                    <div class="set-category-card-img position-relative">
+                      <span class="set-blue-card-badge badge-jobs-primary">General Items</span>
+                      <a href="product-detail-general-item-4.html" class="d-block">
+                        <img src="assets/images/general-item-4.png" alt="img">
+                      </a>
                     </div>
-                    <span>General Items</span>
-                  </a>
+                    <div class="set-category-card-content mt-10">
+                      <!-- FOR SALE -->
+                      <div class="d-flex align-items-center justify-content-between">
+                        <span class="d-block for-sale-badge badge-jobs-primary">Furniture</span>
+                        <div class="d-flex align-items-center">
+                          <span class="set-post-stamp d-inline-flex align-items-center gap-1 position-static"><img src="assets/images/clock-01.png" alt="time"> 2h</span>
+                          <div class="dropdown set-btn-down-none">
+                            <button class="btn dropdown-toggle set-btn-ftr-dropdown " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="assets/images/Claim.png" alt="time">
+                            </button>
+                            <ul class="dropdown-menu set-position-inner">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- TITLE PRICE -->
+                      <div class="d-flex justify-content-between mt-10">
+                        <div>
+                          <a href="product-detail-general-item-4.html" class="d-block text-decoration-none f-14-gb fw-600 pe-5">Blue Ceramic Mug Set</a>
+                          <span class="d-block f-10-grey-67 d-flex gap-2 align-items-center"><a href="#" class="text-decoration-none f-12-grey-67"><img src="assets/images/location-05.png">3182 San Francisco, CA</a></span>
+                        </div>
+                      </div>
+                      <!-- ICONS -->
+                      <div>
+                        <p class="f-12-g mt-1 mb-0">Experience the magic of Broadway under the stars... <a href="#" class="f-12-bl text-decoration-none">Read More</a></p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="set-varients-items flex-grow-1">
+                          <div class="d-flex align-items-center">
+                            <strong class="f-10-bl">Category: &nbsp;</strong>
+                            <span class="f-10-bl">Furniture → Dining</span>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <strong class="f-10-bl">Brand: &nbsp;</strong>
+                            <span class="f-10-bl">WoodCrafters</span>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <strong class="f-10-bl">Condition: &nbsp;</strong>
+                            <span class="f-10-bl">New</span>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <strong class="f-10-bl">Size:  &nbsp;</strong>
+                            <span class="f-10-bl">6-Seater (72" x 36")</span>
+                          </div>
+                        </div>
+                        <div class="text-center">
+                          <div class="d-flex align-items-center gap-3">
+                            <div class="set-share-card">
+                              <img src="assets/images/share.png" alt="share">
+                            </div>
+                            <div class="set-share-card">
+                              <img src="assets/images/tag-icon.png" alt="tag">
+                            </div>
+                          </div>
+                          <h6 class="f-11-orange mb-0 mt-2">Price</h6>
+                          <label class="f-12-bl fw-600">$650.00</label>
+                        </div>
+                      </div>
+                      <!-- TAGS -->
+                      <div class="set-tags-event-card mt-1 border-0">
+                        <span class="set-tag-event">Theatre </span>
+                        <span class="set-tag-event checked-tag">Live music </span>
+                        <span class="set-tag-event">Performances</span>
+                        <span class="set-tag-event">Nissan</span>
+                        <span class="set-tag-event">Nissan</span>
+                        <span class="set-tag-event">Nissan</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <!-- END CARD -->
               </div>
       </div>
     </main>

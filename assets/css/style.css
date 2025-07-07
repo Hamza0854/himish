@@ -219,6 +219,20 @@
 	line-height: 12px;
 	color: #000000;
 }
+.f-10-bl {
+	font-family: var(--font-montserrat);
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 16px;
+	color: #1F458A;
+}
+.f-11-orange {
+	font-family: var(--font-montserrat);
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 16px;
+	color: #F58634;
+}
 /*RADIUS*/
 .border-rounded-8 {
 	border-radius: 8px;
@@ -819,7 +833,7 @@
 	background-color: #1B707E;
 }
 .badge-color-darkpurple {
-	background-color: #8F29FD;
+	background-color: #8F29FD !important;
 }
 .badge-color-darkblue {
 	background-color: #03159D !important;
@@ -835,6 +849,19 @@
 }
 .badge-color-lightbrown {
 	background-color: #BE8155 !important;
+}
+.badge-jobs-purple {
+	background-color: #B20BF4 !important;
+}
+.badge-jobs-primary {
+	background-color: #1F458A !important;
+}
+.badge-cream-jobs {
+	background-color: #E8E6DD !important;
+	color: #1F458A !important;
+}
+.badge-color-black {
+	background-color: #2B2B2B !important;
 }
 .dropdown-menu {
 	font-family: var(--font-montserrat);
@@ -1923,6 +1950,10 @@
 	border: 1px solid #E9ECF3;
 	border-radius: 8px;
 }
+.set-text-pariot {
+	color: #00A113;
+}
+
 /**************************************/
 /*MEDIA QUERIES*/
 /**************************************/
