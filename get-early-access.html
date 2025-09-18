@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himish – Get Early Access</title>
+  <link rel="icon" type="text/css" href="assets/images/fav-icon.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    :root {
+      --background: #f2f8ff;
+      --card-bg: #ffffff;
+      --primary: #f89b2d;
+      --primary-hover: #ffaa3b;
+      --text-dark: #1f2937;
+      --text-muted: #6b7280;
+      --border: #d1d5db;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--background);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+      max-width: 660px;
+      width: 100%;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .logo span {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+
+    .tagline {
+      text-align: center;
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 30px;
+    }
+
+    .segments {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+      gap: 10px;
+    }
+
+    .segment {
+      flex: 1;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      background: #f9fafb;
+      font-size: 14px;
+      transition: all 0.2s ease;
+    }
+
+    .segment input {
+      display: none;
+    }
+
+    .segment.selected {
+      background-color: #e0edff;
+      border-color: var(--primary);
+      font-weight: bold;
+    }
+    .segment strong {
+      font-weight: 700;
+    }
+    .segment small {
+      color: #979797;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 6px;
+      color: var(--text-dark);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      font-size: 16px;
+      background-color: #f9fafb;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .row > div {
+      flex: 1 1 45%;
+    }
+
+    button {
+      width: 50%;
+      padding: 14px;
+      background-color: var(--primary);
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+      font-family: 'Montserrat', sans-serif;
+      display: inline-block;
+      margin-top: 12px;
+    }
+
+    button:hover {
+      background-color: var(--primary-hover);
+      transform: scale(1.01);
+    }
+
+    .hidden {
+      display: none;
+    }
+    .set-text-center {
+      text-align: center;
+    }
+    @media (max-width: 576px) {
+      .row > div {
+        flex: 1 1 100%;
+      }
+      .card {
+        padding: 25px 12px;
+      }
+      body {
+        padding: 30px 8px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      .tagline {
+        font-size: 13px;
+        margin-bottom: 22px;
+      }
+      .segment {
+        font-size: 13px;
+        border-radius: 7px;
+        padding: 7px;
+      }
+      label {
+        font-size: 13px;
+      }
+      input[type="text"], input[type="email"], input[type="tel"] {
+        font-size: 13px;
+        padding: 10px;
+        margin-bottom: 12px;
+      }
+      .segments {
+        margin-bottom: 14px;
+      }
+      .row {
+        gap: 0px;
+      }
+      .logo img {
+        height: 32px;
+      }
+      button {
+        padding: 12px;
+        margin-top: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="logo">
+      <a href="#"><img src="https://himish.com/assets/img/logo.png" alt="Himish Logo"></a>
+    </div>
+
+    <h1>First Come, First Thrilled</h1>
+    <p class="tagline">Early access. Early features. Early thrills. Be among the select few to get in before we go live.</p>
+
+    <form id="earlyAccessForm" action="#" method="POST">
+
+      <div class="segments">
+        <label class="segment" data-value="company">
+          <input type="radio" name="audience_type" value="Company wants exposure" required>
+          <div><strong>A company</strong><br><small>Gain Exposure</small></div>
+        </label>
+
+        <label class="segment" data-value="user">
+          <input type="radio" name="audience_type" value="User curious to explore">
+          <div><strong>A user</strong><br><small>Just Curious</small></div>
+        </label>
+
+        <label class="segment" data-value="both">
+          <input type="radio" name="audience_type" value="Both">
+          <div><strong>A bit of</strong><br><small>Both</small></div>
+        </label>
+      </div>
+
+      <div id="companyField">
+        <label for="company">Company Name</label>
+        <input type="text" id="company" name="company" placeholder="e.g. Tzvi’s Hardware or N/A">
+      </div>
+
+      <div class="row">
+        <div>
+          <label for="phone">Mobile Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="(718) 555-1234" required>
+        </div>
+
+        <div>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+      </div>
+      <div class="set-text-center">
+        <button type="submit">Get Early Access</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    const segments = document.querySelectorAll(".segment");
+    const companyField = document.getElementById("companyField");
+
+    segments.forEach(segment => {
+      segment.addEventListener("click", () => {
+        // Remove all .selected
+        segments.forEach(s => s.classList.remove("selected"));
+
+        // Mark this one as selected
+        segment.classList.add("selected");
+
+        // Check the radio button inside
+        const radio = segment.querySelector('input[type="radio"]');
+        radio.checked = true;
+
+        // Hide/show company field
+        const value = segment.dataset.value;
+        if (value === "user") {
+          companyField.classList.add("hidden");
+          document.getElementById("company").value = "";
+        } else {
+          companyField.classList.remove("hidden");
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
